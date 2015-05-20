@@ -6,14 +6,14 @@
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="/Day04_GuestBook2/guest?action=delete">
-	<input type='hidden' name="id" value="<%=request.getParameter("id") %>">
+	<form method="post" action="/Day11_GuestBook/delete" >
+	<input type='hidden' name="id" value="${id }">
 	<table>
 		<tr>
 			<td>비밀번호</td>
 			<td><input type="password" name="password"></td>
 			<td><input type="submit" value="확인"></td>
-			<td><a href="/Day04_GuestBook2/guest">메인으로 돌아가기</a></td>
+			<td><a href="/Day11_GuestBook/index">메인으로 돌아가기</a></td>
 		</tr>
 	</table>
 	</form>

@@ -14,7 +14,7 @@
 			<td>비밀번호</td><td><input type="password" name="password"></td>
 		</tr>
 		<tr>
-			<td colspan=4><textarea name="content" cols=60 rows=5></textarea></td>
+			<td colspan=4><textarea name="message" cols=60 rows=5></textarea></td>
 		</tr>
 		<tr>
 			<td colspan=4 align=right><input type="submit" VALUE=" 확인 "></td>
@@ -28,7 +28,7 @@
 				<td>[${num.count }]</td>
 				<td>${vo.name }</td>
 				<td>${vo.reg_date }</td>
-				<td><a href="/views/deleteform.jsp?action=deleteform&id=${vo.no}">삭제</a></td>
+				<td><a href="/Day11_GuestBook/deleteform?no=${vo.no}">삭제</a></td>
 			</tr>
 			<tr>
 				<td colspan=4>${vo.message }</td>
