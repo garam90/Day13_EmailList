@@ -48,8 +48,7 @@ public class GuestBookController {
 	
 	@RequestMapping("/delete")
 	public String delete(@RequestParam int id, @RequestParam String password){
-		System.out.println("controller_delete");
-		System.out.println("id >> "+id + "ps >> "+password);
+
 		guestBookService.delete(id, password);
 		
 		return "redirect:/index";
